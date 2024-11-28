@@ -4,8 +4,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Data;
 
 @Entity
+@Data
 public class ProductModel {
 
         @Id
@@ -13,9 +15,9 @@ public class ProductModel {
         private Long id;
         private String description;
         private String barCode;
-        private double purchaseValues;
+        private double purchaseValue;
         private double saleValue;
         private int stock;
         private String supplier;
 
-    }
+}
